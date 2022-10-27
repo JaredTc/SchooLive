@@ -1,0 +1,382 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-color: #20C67A;
+    --first-color: #4070F4;
+    --second-color: #0E2431;
+    --color1: #687d82;
+    --color2: #80959a;
+    --color3: #98aeb3;
+    --color4: #afc6cb;
+    --color5: #000000;
+    --header-height: 3rem;
+
+}
+
+:root {
+    --font-family: 'Inter';
+    --body-font: 'Poppins', sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+    --font-size: 50px;
+    --line-height: 77px;
+}
+
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.live {
+    background-color: red;
+    color: white;
+    font-family: var(--body-font);
+    border-radius: 6px;
+}
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    width: 100%;
+    /* border: #4070F4 1px solid; */
+
+
+}
+
+.nav-links a {
+    color: var(--color5);
+    font-family: var(--body-font);
+    font-size: 19px;
+
+}
+
+a {
+    text-decoration: none;
+
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    font-style: var(--font-style);
+    font-family: var(--body-font);
+}
+
+.nav__link:hover {
+    position: relative;
+}
+
+.nav__link:hover::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0.18rem;
+    left: 0;
+    top: 2rem;
+    background-color: var(--primary-color);
+}
+
+/* LOGO */
+.logo {
+    font-size: 30px;
+    font-family: var(--body-font);
+    margin-left: 2%;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+    padding-right: 30px;
+}
+
+.menu li:hover {
+    border-radius: 5px;
+    transition: 0.3s ease;
+
+}
+
+.menu li {
+    padding: 5px 14px;
+}
+
+span img {
+    color: var(--primary-color);
+    font-size: 100px;
+    width: 50%;
+    color: white;
+}
+
+
+.btn__login {
+    border-radius: 8px;
+    border: 1px solid black;
+}
+
+.btn__register {
+    background-color: var(--primary-color);
+    border-radius: 8px;
+
+}
+
+/* HOME SCREEN */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgs img {
+    width: 490px;
+    height: 465px;
+    /* border: 1px solid black; */
+
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+}
+
+.description {
+    /* border: 1px solid black; */
+    font-family: var(--font-family);
+    padding-left: 3%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    width: 70%;
+    font-family: var(--font-family);
+    font-size: 30px;
+}
+
+.title {
+    width: 60%;
+    font-size: 66px;
+    font-weight: 400;
+}
+
+.btn {
+    display: flex;
+
+
+}
+
+.btn__start {
+    background-color: var(--primary-color);
+    color: white;
+    width: 22%;
+    height: 77px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.btn__start a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+.btn__leermas {
+    background-color: #00000000;
+    border: 1px solid black;
+    border-radius: 18px;
+    width: 22%;
+
+
+}
+
+.btn__leermas a {
+    color: #000000;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.card__principal {
+    padding-left: 4%;
+}
+
+.slides {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.cards {
+    background-color: #D9D9D9;
+    width: 334px;
+    height: 280px;
+    border-radius: 29px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+
+/* LOGIN PAGE */
+.login {
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    /* border: #000000 1px solid; */
+}
+
+.form h2 {
+    text-align: center;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+.div__form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+
+}
+
+.form input {
+    width: 400px;
+    height: 41px;
+    font-size: 20px;
+    border-radius: 11px;
+}
+
+.form label {
+    font-family: var(--font-family);
+}
+
+.btnn {
+    padding-top: 10%;
+}
+
+.entrar {
+    width: 410px;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    font-family: var(--font-family);
+    font-size: 27px;
+    border-radius: 18px;
+}
+
+.imgen_cat {
+    /* border: #000000 1px solid; */
+    width: 30%;
+    padding-left: 10%;
+}
+
+/* REGISTRO SCREEN */
+.Planes__Screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+
+}
+
+.CardPlan {
+    background: #D9D9D9;
+    border-radius: 20px;
+    width: 547px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: #000000 1px solid; */
+}
+
+.info__study {
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+    /* width: 100%; */
+}
+
+.info__study img {
+    width: 272px;
+    height: 326px;
+}
+
+.plus {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+
+}
+
+.plus img {
+    width: 25px;
+    height: 25px;
+}
+
+.btnStart {
+    /* border: #000000 1px solid; */
+}
+
+.btn-start {
+    background-color: var(--primary-color);
+    color: white;
+    width: 82%;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+}
+
+.btn-start a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+/* STUDY FORM */
+.studyForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* border: #000000 1px solid; */
+    gap: 20%;
+
+}
+
+.formStudy {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.studyImg {
+    /* width: 50%; */
+    /* border: #000000 1px solid; */
+}
+
+.studyImg img {
+    width: 500px;
+    height: 642px;
+}
