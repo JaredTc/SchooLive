@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link id="favIcon">
+    <script src="../jquery-3.6.1.min.js"></script>
+    <title>Informatica</title>
+</head>
+
+<body>
+
+
+    <span id="navBar"></span>
+
+
+    </div>
+    <section class="informatica" id="informatica">
+
+
+
+        <div class="videoCurso">
+            <div id="video" class="videoPlay">
+
+                <video width="972" height="547" src="../assets/video/Qué es la Informática - INFORMÁTICA.mp4"
+                    controls="controls"></video>
+
+                <h2>¿Que es la Informatica? | INTRODUCCION</h2>
+            </div>
+
+            <div class="playlist">
+                <div class="video">
+                    <div class="img">
+                        <a href="#"> <img onclick="changeVideo(event)" src="../assets/img/hqdefault.webp" alt=""
+                                srcset=""></a>
+                    </div>
+                    <div class="descript">
+                        <p>¿Que hace la informatica?</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="img">
+                        <a href="#"> <img onclick="changeVideo2(event)" src="../assets/img/hqdefault (1).webp" alt=""
+                                srcset=""></a>
+                    </div>
+                    <div class="descript">
+                        <p>¿Que es un ordenador?</p>
+                    </div>
+                </div>
+                <div class="video">
+                    <div class="img">
+                        <a href="#"> <img onclick="changeVideo3(event)" src="../assets/img/hqdefault (2).webp" alt=""
+                                srcset=""></a>
+                    </div>
+                    <div class="descript">
+                        <p>Unidad de Almacenamiento</p>
+                    </div>
+                </div>
+
+                <div style="padding-top: 15%; display: flex; justify-content: center;">
+                    <a href="#Exam" class="butonn">Realizar Test </a>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <div class="testEx">
+        <h1>Test</h1>
+        <div id="Exam" class="exam">
+            <div>
+                <table>
+                    <label for="">
+                        <h3>1-Es la Definicio de Informatica</h3>
+                        <tr>
+
+                            <td><input type="radio" value="a1" name="1" />Tratamiento de informacion de manera
+                                automatica
+                                mediante ordenadores</td>
+                            <td><input type="radio" value="a2" name="1" /> No se</td>
+                            <td><input type="radio" value="a3" name="1" />Conjunto de conocimientos técnicos que se
+                                ocupan del tratamiento automático de la información por medio de computadoras.</td>
+
+                        </tr>
+                        <td colspan="2">
+                </table>
+
+
+                <table>
+                    <label for="">
+                        <h3>2-Que significa la palabra informatica?</h3>
+                        <tr>
+
+                            <td><input type="radio" value="b1" name="2" />Informacion Matenatica</td>
+                            <td><input type="radio" value="b2" name="2" />Maquinaria Digital</td>
+                            <td><input type="radio" value="b3" name="2" /> INFOR(informacion) y MATICA(Automatico)</td>
+
+
+                        </tr>
+                        <td colspan="2">
+                </table>
+                <table>
+
+                    <label for="">
+                        <h3>3- Son dos partes fundamentales de un ordenador?</h3>
+                    </label>
+                    <tr>
+
+                        <td><input type="radio" value="c1" name="3" />Mouse y Monitor</td>
+                        <td><input type="radio" value="c2" name="3" />Hardware y Software</td>
+                        <td><input type="radio" value="c3" name="3" />Teclado y Auriculares</td>
+
+
+                    </tr>
+                </table>
+                <table>
+
+                    <label for="">
+                        <h3>4-Cuanto es el equivalente a 1 GB en Megabytes?</h3>
+                    </label>
+                    <tr>
+
+                        <td><input type="radio" value="d1" name="4" />50</td>
+                        <td><input type="radio" value="d2" name="4" />1024</td>
+                        <td><input type="radio" value="d3" name="4" />1</td>
+
+
+                    </tr>
+                </table>
+                <table>
+
+                    <label for="">
+                        <h3>5-Cuantos GB son 1500MB?</h3>
+                    </label>
+                    <tr>
+
+                        <td><input type="radio" value="f1" name="5" />5</td>
+                        <td><input type="radio" value="f2" name="5" />1024</td>
+                        <td><input type="radio" value="f3" name="5" />1.4</td>
+
+
+                    </tr>
+                </table>
+
+
+
+
+            </div>
+            <button id="submit">Enviar</button>
+        </div> 
+    </div>
+
+   
+
+
+
+
+    <script src="../index.js"></script>
+    <script src="../navbar.js"></script>
+    <script src="../validaciones.js"></script>
+    <script src="../js-dom.js"></script>
+</body>
+
+</html>

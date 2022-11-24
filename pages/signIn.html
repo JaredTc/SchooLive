@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favIcon">
     <link rel="stylesheet" href="../style.css">
     <title>SignIn</title>
 </head>
+
 <body>
     <!-- Navbar
     <span id="navbar-2"></span> -->
@@ -14,26 +17,94 @@
         <div class="logo">Schoo<span class="live">Live</span></div>
         <ul class="nav-links">
             <div class="menu">
-                <li><a class="nav__link active" href="../index.html">Inicio </a></li>
-                <li class="btn__login"><a class="nav__link" href="pages/signIn.html">Entrar</a></li>
-                <li class="btn__register"><a class="nav__link" href="registroScreen.html">Registrar</a></li>
+                <li><a class="nav__link active" href="../index.html">Home</a></li>
+                <li class="btn__register"><a class="nav__link" href="#" id="open">SignUp</a></li>
             </div>
         </ul>
     </nav>
+
+    <div class="modal-container-2" id="modal_container">
+        <div class="modal">
+            <div class="Planes__Screen">
+                <div class="CardPlan">
+                    <div class="info__study">
+                        <div class="imagen">
+                            <img src="../assets/study.png" alt="">
+                        </div>
+                        <h2>Estudiante</h2>
+
+                        <div class="plus">
+                            <!-- <img src="../assets/Ok.png" alt=""> -->
+                            <p>Acceso de por vida</p>
+                        </div>
+                        <div class="plus">
+                            <p>Acceso Gratuito</p>
+
+                        </div>
+                        <div class="plus">
+                            <p>Cursos, Libros, Videos</p>
+                        </div>
+
+                        <div class="btnStart">
+                            <button class="btn-start"><a href="../pages/studyForm.html">
+                                    Empezar
+                                </a></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="CardPlan">
+                    <div class="info__study">
+                        <div class="imagen">
+                            <img src="../assets/teacher.png" alt="">
+                        </div>
+                        <h2>Docente</h2>
+                        <div class="plus">
+                            <!-- <img src="../assets/Ok.png" alt=""> -->
+                            <p>Registrar Alumnos</p>
+                        </div>
+                        <div class="plus">
+                            <p>Acceso de por vida</p>
+
+                        </div>
+                        <div class="plus">
+                            <p>Acceso Gratuito</p>
+                        </div>
+                        <div class="btnStart">
+                            <button class="btn-start"><a href="">
+                                    Empezar
+                                </a></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <button id="close" class="close">Cerrar</button>
+        </div>
+
+
+
+    </div>
+
+
+
     <div class="login">
-        <div class="form">
+        <div class="form form2">
+
+            <!-- <div class="logo login-2">Schoo<span class="live">Live</span></div> -->
             <h2 class="subtitle">Iniciar Sesion</h2>
-            <form action="">
-                <div class="div__form">
-                    <label for="">Correo Electronico: </label>
-                    <input type="text">
+            <div id="success"></div>
+            <form>
+                <div id="form" class="div__form">
+                    <label for="">Username: </label>
+                    <input id="Username" type="text">
                 </div>
                 <div class="div__form">
                     <label for="">Password: </label>
-                    <input type="password">
+                    <input id="password" type="password">
                 </div>
                 <div class="btnn">
-                    <button class="entrar" type="submit">Entrar</button>
+                    <button onclick="startSession(event)" class="entrar" type="submit">Entrar</button>
                 </div>
             </form>
         </div>
@@ -41,11 +112,21 @@
         <div class="imgen_cat">
             <img src="../assets/cat astronaut login.png" alt="">
         </div>
+
+
+        <!-- 
+        <span id="modal">
+
+        </span> -->
+
     </div>
 
 
 
     <!-- Scripts -->
     <script src="../index.js"></script>
+    <!-- <script src="../js-dom.js"></script> -->
+    <script src="../validaciones.js"></script>
 </body>
+
 </html>

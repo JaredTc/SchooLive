@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <script src="../jquery-3.6.1.min.js"></script>
+    <link id="favIcon">
+
+    <title>FigurasGeometricas</title>
+</head>
+
+<body>
+    <span id="navBar"></span>
+        <div class="modal-container" id="modal_container">
+            <div class="test-modal">
+                <div class="test__screen">
+                    <div class="TestCard">
+                        <div class="infoTest">
+                            <h2>Test </h2>
+                            <p>Octaedro.- Sus 8 caras iguales son triángulos equiláteros.
+                                Cada triángulo equilátero del tetraedro de lado 1, hemos visto que tiene una superficie
+                                de 0,433.</p>
+                            <img src="../assets/img/areasdecuerposgeometricos10.jpg" alt="">
+
+                            <p>Como el octaedro tiene 8 caras multiplicaremos la superficie anterior por 8 y por el valor del cuadrado del lado del triángulo o arista de dicho octaedro:</p>
+                                <img src="../assets/img/areasdecuerposgeometricos11.jpg" alt="">
+                                <p>Calcula el área total de un octaedro de 5 cm. de arista:</p>
+                            <input placeholder="Resultado" type="text" name="" id="resTest">
+                            <span id="res"></span>
+                            <div class="btnStart">
+                                <button onclick="evaluar(event)" class="btn-start"><a href="#">
+                                        Evaluar
+                                    </a></button>
+                                  
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                <button id="close" class="close">Cerrar</button>
+            </div>
+        </div>
+    <section class="figGeo" id="figGeo">
+
+        <!-- <h1>Areas de cuerpos Geometricos</h1> -->
+        <div class="contenido__principal">
+
+            <h1>Áreas de los Cuerpos Geométricos <br> Áreas de los Poliedros Regulares</h1>
+
+            <div class="cardBdy">
+                <p>
+                    En este tema nos dedicaremos a estudiar las
+                    superficies que envuelven a los cuerpos geométricos o cuerpos sólidos.
+
+                    Entendemos por cuerpo sólido al que ocupa un lugar en el espacio. Es decir, el que contiene las tres
+                    dimensiones (largo, ancho y alto).
+
+                    Si este sólido tiene forma de poliedro, prisma o cuerpo redondo podemos referirnos a los cuerpos
+                    geométricos.
+
+                    ÁREAS DE LOS POLIEDROS REGULARES
+                    Recordarás que estudiamos los volúmenes de los cinco poliedros regulares. Ahora estudiaremos el
+                    cálculo
+                    de sus superficies.
+
+                    Los poliedros regulares tienen todas sus caras iguales:
+
+                    1) Tetraedro.- Sus cuatro caras son triángulos equiláteros
+                </p>
+
+                <img src="../assets/img/areasdecuerposgeometricos1.jpg" width="250" alt="">
+                <p>El área total de este cuerpo geométrico lo hallaremos calculando el área de una cara y la
+                    multiplicaremos por 4.
+
+                    Para este cálculo necesitamos conocer la apotema o altura de una cara de un poliedro.</p>
+
+                <img src="../assets/img/areasdecuerposgeometricos2.jpg" width="250" alt="">
+
+                <p>La altura de una cara la calculamos a partir de la figura siguiente:</p>
+                <img src="../assets/img/areasdecuerposgeometricos3.jpg" width="250">
+                <p>A la arista o lado del triángulo le damos el valor 1 para facilidad de cálculo y no tener que
+                    aprender
+                    fórmulas.
+                    En cada caso, aplicamos los conocimientos básicos de geometría con un poco de sentido común.
+
+                    Primeramente calculamos la altura que la representaremos con h.
+                    La hipotenusa vale 1 y un cateto (mitad de la base que mide 1/2). Utilizando el teorema de Pitágoras
+                    tendremos:
+
+                </p>
+                <img src="../assets/img/areasdecuerposgeometricos4.jpg" width="250" alt="">
+                <p>El área de una cara para cuando la arista vale 1 será:</p>
+                <img src="../assets/img/areasdecuerposgeometricos5.jpg" width="250" alt="">
+                <p>Cuando el lado del triángulo o arista de una cara valga a el área será:</p>
+                <img src="../assets/img/areasdecuerposgeometricos6.jpg" width="250" alt="">
+                <p>La arista la elevamos al cuadrado por tomarla en dos dimensiones: largo y ancho arista</p>
+                <img src="../assets/img/areasdecuerposgeometricos7.jpg" width="250" alt="">
+                <p>Como el tetraedro tiene 4 caras, la superficie total será: </p>
+                <img src="../assets/img/areasdecuerposgeometricos8.jpg" width="250" alt="">
+
+
+
+                <div class="test__div">
+                    <h2>Realizar Test</h2>
+                    <button class="test" id="open">Lets Go</button>
+                </div>
+
+
+            </div>
+
+    </section>
+
+
+    <script src="../js-dom.js"></script>
+    <script src="../navbar.js"></script>
+    <script src="../index.js"></script>
+
+</body>
+
+</html>

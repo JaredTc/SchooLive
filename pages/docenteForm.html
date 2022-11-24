@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link id="favIcon">
+    <link rel="stylesheet" href="../style.css">
+    <title>Estudiante</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Schoo<span class="live">Live</span></div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a class="nav__link active" href="../index.html">Home </a></li>
+                <!-- <li><a class="nav__link active" href="#Materias">Materias </a></li>
+                <li><a class="nav__link" href="#Gallery">Comunidad</a></li> -->
+                <li class="btn__login"><a class="nav__link" href="signIn.html">SignIn</a></li>
+                <!-- <li class="btn__register"><a class="nav__link" href="pages/registroScreen.html">Registrar</a></li> -->
+            </div>
+        </ul>
+    </nav>
+
+
+    <div class="studyForm">
+
+        <div class="form">
+            <h2 class="subtitle">Crear Cuenta</h2>
+            <!-- <select name="" id="">
+                <option value="">Estudiante</option>
+                <option value="">Docente</option>
+            </select> -->
+            <h2 class="subtitle">Docente</h2>
+            <form  id="form"  >
+                <div class="div__form">
+                    <label for="">Nombre: </label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <div class="div__form">
+                    <label for="">Correo Electronico: </label>
+                    <input id="email" type="email" name="email" >
+                </div>
+                <div class="div__form">
+                    <label for="">Username: </label>
+                    <input id="Username" type="text" name="Username">
+                </div>
+                <div class="div__form">
+                    <label for="">Password: </label>
+                    <input id="password" name="password" type="password">
+                </div>
+                <div class="btnn">
+                    <button class="entrar"  onclick="RegisterDocente(event)" type="submit">Registrar</button>
+                </div>
+            </form>
+        </div>
+        <div class="DoceImg">
+            <img src="../assets/AccountDocente.png" alt="">
+        </div>
+
+        
+    </div>
+
+
+
+    <script src="../js-dom.js"></script>
+    <script src="../validaciones.js"></script>
+
+</body>
+
+</html>

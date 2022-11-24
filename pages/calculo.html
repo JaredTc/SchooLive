@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styles/dashboard.css">
+    <link rel="stylesheet" href="../styles/subjects.css">
+    <link id="favIcon">
+    <script src="../jquery-3.6.1.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> -->
+    <title>Calculo</title>
+</head>
+
+<body>
+
+    <span id="navBar"></span>
+
+    <section class="dashWeb">
+
+        <h1>Calculo</h1>
+
+        <div class="themes">
+
+            <div class="card-theme">
+
+                <a href="#limites"> <img src="../assets/subjects/limites-de-funciones-300x185.webp" alt=""></a>
+                Limites de una Funcion
+            </div>
+            <div class="card-theme">
+                <a href="#limlaterals"><img src="../assets/subjects/limites-laterales-286x300.webp" width="230"
+                        alt=""></a>
+                Limites Laterales
+            </div>
+            <div class="card-theme">
+                <a href="#limInfinito"> <img src="../assets/subjects/limites-al-infinito-768x557.webp" width="250"
+                        alt=""></a>
+
+                Límite de una función en el infinito
+
+
+            </div>
+            <div class="card-theme">
+                <a href="#inderterminados"><img src="../assets/subjects/Limites-indeterminados.png" width="300" alt="">
+
+                </a>
+
+                <!-- Límites indeterminados -->
+            </div>
+            <div class="card-theme">
+                <a href="#ejercicios"><img
+                        src="../assets/subjects/ejercicios-resueltos-de-funciones-definidas-por-partes-768x597.webp"
+                        width="280" alt=""></a>
+                Ejercicios resueltos de límites de funciones
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <section id="limites" class="limites">
+        <div class="container-limit">
+            <div class="limite-card">
+                <h1> ¿Qué es el límite de una función?</h1>
+                <p> En matemáticas, el límite de una función en un punto es el valor al cual se aproxima la función
+                    cuando x se
+                    acerca a ese punto.
+                    El límite de la función f(x) en el punto x=a se representa utilizando la siguiente notación:</p>
+                <img src="../assets/subjects/limites-de-funciones-300x185.webp" alt="">
+                <p>La expresión anterior significa que el límite de la función f(x) cuando x tiende a a es igual a b.
+
+                    Para acabar de entender qué significa el límite de una función, vamos a hallar el siguiente límite:
+                </p>
+                <img src="../assets/subjects/quicklatex.com-593018e7c417f42eb101d5c18bd95e1e_l3.svg" alt="">
+
+                <p>Para ver a qué valor se aproxima la función cuando x tiende a 2, podemos ir calculando imágenes de la
+                    función de puntos cada vez más cerca de x=2:</p>
+
+                <div class="table">
+                    <img src="../assets/subjects/limite-de-una-funcion-en-un-punto-por-la-izquierda-258x300.webp"
+                        alt="">
+                    <img src="../assets/subjects/limite-de-una-funcion-en-un-punto-por-la-izquierda-258x300.webp"
+                        alt="">
+                </div>
+                <p>Como puedes ver en las dos tablas anteriores, a medida que vamos tomando valores más próximos a x=2,
+                    la función se va acercando a 1. Por lo tanto, el límite de la función cuando x tiende a 2 es 1.</p>
+                <img src="../assets/subjects/quicklatex.com-feb1547ccfecec80637dfbcada08ebce_l3.svg" alt="">
+
+                <p>A continuación puedes ver la función representada gráficamente. Como puedes comprobar, la función se
+                    acerca a 1 cuando x se aproxima a 2.</p>
+
+                <img src="../assets/subjects/limite-de-una-funcion.webp" width="250" alt="">
+
+                <p>Fíjate en la gráfica que la función se acerca al mismo valor independientemente de si nos acercamos
+                    por la izquierda o por la derecha. Más abajo profundizaremos más sobre este concepto de los límites.
+                </p>
+
+
+                <h1>Cómo calcular el límite de una función</h1>
+
+                <p>Para calcular el límite de una función en un punto simplemente tenemos que sustituir el valor de ese
+                    punto en la función.
+
+                    Por ejemplo, si queremos resolver el límite cuando x tiende a 3 de la siguiente función, debemos
+                    sustituir las x de la función por 3:</p>
+                <img src="../assets/subjects/quicklatex.com-9221809b5c761a040652da3b8b7bb1b2_l3.svg" alt="">
+                <p>Más ejemplos de cálculos de límites de funciones:
+
+                </p>
+
+                <div class="lim-examples">
+                    <img src="../assets/subjects/quicklatex.com-5c6c7bf7bc6ae2199c47bd254921bcd8_l3.svg" alt="">
+                    <img src="../assets/subjects/quicklatex.com-24df781f89c4f9e3ea6ea05b503c3342_l3.svg" alt="">
+                    <img src="../assets/subjects/quicklatex.com-60c45504db8f23785609ebdc2119da3d_l3 (1).svg" alt="">
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="limlaterals" class="lim-laterales">
+        <div class="container-limit">
+            <div class="limite-card">
+                <h1>Limites Laterales de una Funcion</h1>
+                <p>Una vez hemos visto la definición de límite de una función, vamos a analizar el concepto de límites
+                    laterales. Existen dos tipos de límites laterales: el límite lateral por la izquierda y el límite
+                    lateral por la derecha.
+
+                    El límite lateral de la función por la izquierda se expresa con un signo menos en el punto donde se
+                    analiza el límite y, por otro lado, el límite lateral por la derecha se indica con el signo más.</p>
+                <p>Fíjate en el siguiente ejemplo para entender mejor el significado de los límites laterales</p>
+
+                <img src="../assets/subjects/limites-laterales-286x300.webp" alt="">
+                <p>Como puedes ver en la representación gráfica de esta función definida a trozos, los límites laterales
+                    dependen del lado en el que se calculen.
+
+                    En este caso, la función tiende a 3 cuando x tiende a 2 por la izquierda, ya que la función toma
+                    valores cada vez más próximos a 3 cuando x se aproxima a x=2 por su izquierda.
+
+                    En cambio, el límite lateral de la función en x=2 por la derecha vale 6. Porque si nos acercamos al
+                    punto x=2 desde su derecha, la función va tomando valores cada vez más cercanos a f(x)=6.</p>
+                <h2>Límites laterales iguales</h2>
+                <p>Acabamos de ver un ejemplo en el que los límites laterales de una función son distintos, pero… ¿qué
+                    pasa si los límites laterales son iguales?
+
+                    Si los dos límites laterales de una función en un punto existen y son iguales, existe el límite de
+                    la función en dicho punto y el resultado del límite es el valor de los límites laterales.
+
+                    Es decir, para que exista el límite de una función en un punto, se debe cumplir la siguiente
+                    condición:</p>
+                <img src="../assets/subjects/quicklatex.com-3a139b0a060a4e5dbf3fd7331566a38b_l3.svg" width="400" alt=""
+                    srcset="">
+                <p>Por lo tanto, si los límites laterales de una función en un punto son diferentes, el límite de la
+                    función en ese punto no existe.
+
+                    Vamos a resolver un ejemplo para acabar de comprender el concepto de límites laterales:</p>
+
+                <img src="../assets/subjects/continuidad-de-una-funcion-definida-a-trozos-768x536.webp" width="400"
+                    alt="">
+
+                <p>Los límites laterales en el punto x=-2 de la función representada gráficamente coinciden, ya que el
+                    valor de la función tiende a 3 indistintamente de si nos aceramos a x=-2 por la izquierda o por la
+                    derecha. En consecuencia, el límite de la función en x=-2 es igual a 3.</p>
+
+                <img src="../assets/subjects/quicklatex.com-a519d8bae77c522d2da8714865b2ebcf_l3.svg" width="400" alt="">
+
+                <p>En cambio, en el punto x=4 los límites laterales son distintos, ya que por la izquierda la función se
+                    aproxima a f(x)=3 pero por la derecha la función se aproxima a f(x)=2. De modo que el límite de la
+                    función en este punto no existe.</p>\
+
+                <img src="../assets/subjects/quicklatex.com-fe05869cae9a21c3edca394975c3359c_l3.svg" width="400" alt="">
+            </div>
+
+        </div>
+    </section>
+
+    <section id="limInfinito" class="lim-laterales">
+        <div class="container-limit">
+            <div class="limite-card">
+                <h1>Límite de una función en el infinito</h1>
+                <p>El límite de una función cuando x tiende a infinito, ya sea positivo o negativo, puede ser un valor
+                    real, más infinito, menos infinito o no existir.</p>
+
+                <img src="../assets/subjects/limites-al-infinito-768x557.webp" alt="">
+                <p>Como puedes ver en el primer gráfico, la función representada tiende al valor real k al infinito,
+                    porque se va acercando a k a medida que x va creciendo. La función de arriba a la derecha tiende al
+                    más infinito cuando x tiende a infinito, ya que crece indefinidamente al aumentar de valor la x. En
+                    cambio, la gráfica de abajo a la izquierda decrece sin parar y por eso tiende a menos infinito.
+                    Finalmente, la última función es periódica y no tiende a ningún valor, por lo tanto, no existe el
+                    límite en el infinito en este caso.
+
+                    Resolver este tipo de límites no es nada fácil, ya que se debe aplicar un procedimiento previo. E,
+                    incluso, dependiendo de cómo sea el límite en el infinito, este procedimiento varia. </p>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section id="inderterminados">
+        <div class="container-limit">
+            <div class="limite-card">
+                <h1>Límites indeterminados</h1>
+                <p>Las indeterminaciones, también llamadas formas indeterminadas, son expresiones matemáticas que
+                    aparecen en el cálculo de límites de funciones cuyo resultado no está definido.
+
+                    Los diferentes tipos de indeterminaciones son las siguientes:</p>
+
+                <ul>
+                    <li>Indeterminación infinito menos infinito (∞-∞)</li>
+                    <li>Indeterminación número entre cero (k/∞) </li>
+                    <li>Indeterminación cero entre cero (0/0)</li>
+                    <li>Indeterminación infinito entre infinito (∞/∞)</li>
+                    <li>Indeterminación 1 elevado a infinito (1∞)</li>
+                    <li>Indeterminación cero elevado a cero (00) </li>
+                    <li>Indeterminación cero por infinito (0·∞) </li>
+                    <li>Indeterminación cero elevado a infinito (0∞)</li>
+                    <li>Indeterminación infinito elevado a cero (∞0)</li>
+                </ul>
+                <p>Es decir, cuando en el cálculo de un límite obtenemos una indeterminación de las anteriores, no
+                    significa que el límite no exista o que no se pueda resolver, sino que tendremos que hacer alguna
+                    modificación a la función para poder hallar la solución del límite.
+
+                    En el siguiente enlace puedes ver la explicación de cómo resolver todos los tipos de
+                    indeterminaciones:</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="ejercicios">
+        <div class="container-limit">
+            <div class="limite-card">
+                <h1>Ejercicios resueltos de limites de funciones</h1>
+                <h2>Ejercicios Simples</h2>
+                <p>Resuelve los siguientes límites de funciones:</p>
+                <img src="../assets/subjects/ejercicio1.png" alt="">
+
+                <div class="desplegable">
+                    <h2>Ver Solucion</h2>
+                    <div class="contenido">
+                        <p>Para calcular los límites, sustituimos el valor de x en la función y hacemos las operaciones:
+                        </p>
+                        <img src="../assets/subjects/resultadoEj1.png" alt="">
+                    </div>
+                </div>
+                <h2>Ejercicio 2</h2>
+                <img src="../assets/subjects/ej2.png" alt="">
+                <div class="desplegable">
+                    <h2>Ver Solucion</h2>
+                    <div class="contenido">
+                        <p>Aunque los cálculos en este ejercicio son un poco más complicados, estos límites también se
+                            pueden solucionar por sustitución:
+
+                        </p>
+                        <img src="../assets/subjects/respej2.png" alt="">
+                    </div>
+                </div>
+                <h2>Ejercicio 3</h2>
+                <p>Encuentra el límite de la siguiente función exponencial cuando x tiende a más infinito:</p>
+                <img src="../assets/subjects/ej3.svg" width="120" alt="">
+
+                <div class="desplegable">
+                    <h2>Ver Solucion</h2>
+                    <div class="contenido">
+                        <p>Aunque sea una función exponencial, el proceso para resolver el límite es el mismo: sustituir la x por el infinito.
+                        </p>
+                        <img src="../assets/subjects/resp3.svg" width="240" alt="">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+    <script src="../navbar.js"></script>
+    <script src="../validaciones.js"></script>
+    <script src="../js-dom.js"></script>
+
+</body>
+
+</html>

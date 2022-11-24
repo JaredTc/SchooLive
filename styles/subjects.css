@@ -1,0 +1,95 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root {
+    --primary-color: #20C67A;
+    --first-color: #4070F4;
+    --second-color: #0E2431;
+    --color1: #687d82;
+    --color2: #80959a;
+    --color3: #98aeb3;
+    --color4: #afc6cb;
+    --color5: #000000;
+    --header-height: 3rem;
+
+}
+
+:root {
+    --font-family: 'Inter';
+    --body-font: 'Poppins', sans-serif;
+    --font-style: normal;
+    --font-weight: 400;
+    --font-size: 50px;
+    --line-height: 77px;
+}
+
+:root {
+    --screenHeigth: 900px;
+
+}
+
+.themes{
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 25px;
+    column-gap: 20px;
+
+}
+.themes::-webkit-scrollbar{
+    display: none;
+}
+
+.card-theme{
+    background-color: white;
+     border: #9a9a9a 1px solid;
+    width: 10%;
+    height: 300px;
+    flex: 0 0 20%;
+    padding: 30px;
+    scroll-snap-align: start;
+    border-radius: 30px;
+    font-family:  var(--body-font);
+    font-size: 25px
+}
+
+/* .card-theme h1{
+    font-size: 35px;
+} */
+
+.container-limit{
+    display: flex;
+    justify-content: center;
+}
+.limite-card{
+    /* border: #000000 1px solid; */
+    width: 50%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.table{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2%;
+}
+
+.lim-examples{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 4%;
+}
+
+.contenido{
+    display: none;
+  }
+  
+
+  .desplegable h2{
+    background-color: #c0fae0;
+    text-align: center;
+  }

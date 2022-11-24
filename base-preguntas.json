@@ -1,0 +1,63 @@
+[
+    {
+        "categoria": "Informatica",
+        "pregunta": "¿Que es un sistema operativo?",
+        "respuesta": "El sistema operativo es el software que coordina y dirige todos los servicios y aplicaciones que utiliza el usuario en una computadora, ",
+        "incorrecta1": "Una Imagen de archivos",
+        "incorrecta2": "Ubuntu",
+        "incorrecta3": "Exfat",
+      
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Informatica",
+        "pregunta": "Componentes de un sistema operativo",
+        "respuesta": "Sistema de Archivos, Nucleo, Interpretacion de comandos ",
+        "incorrecta1": "Imagen Iso, Interpretacion de Comandos",
+        "incorrecta2": "Ninguna de las Anteriores",
+        "incorrecta3": "Exfat",
+      
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Informatica",
+        "pregunta": "Unidades de almacenamiento por medio magnético",
+        "respuesta": "Disco Duro & Disquette ",
+        "incorrecta1": "Pendrive & SSD",
+        "incorrecta2": "CD-RON",
+        "incorrecta3": "Tarjeta SD",
+      
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Informatica",
+        "pregunta": "Es la unidad de almacenamiento por medio óptico",
+        "respuesta": "CD-ROM ",
+        "incorrecta1": "Pendrive & SSD",
+        "incorrecta2": "Disco Duro & Disquette",
+        "incorrecta3": "Tarjeta SD",
+      
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Informatica",
+        "pregunta": "Unidades de almacenamiento por medio virtual",
+        "respuesta": "SSD, Pendrive, Tarjetas SD",
+        "incorrecta1": "CD-ROM",
+        "incorrecta2": "Disco Duro & Disquette",
+        "incorrecta3": "Tarjeta SD",
+      
+        "objectFit": "cover"
+    },
+    {
+        "categoria": "Informatica",
+        "pregunta": "La protección de datos es el proceso de:",
+        "respuesta": " salvaguardar información importante contra corrupción, verse comprometida o pérdida. ",
+        "incorrecta1": "guardar passwords en el navegador",
+        "incorrecta2": "cambiar passwords cada mes",
+        "incorrecta3": "utilizar encriptadores de passwords",
+      
+        "objectFit": "cover"
+    }
+  
+]

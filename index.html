@@ -5,83 +5,296 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="favIcon">
     <link rel="stylesheet" href="style.css">
     <title>SchooLive</title>
 </head>
 
 <body>
 
-    <span id="navbar"></span>
+    <!-- <span id="navbar"></span> -->
+    <nav class="navbar">
+        <div class="logo">Schoo<span class="live">Live</span></div>
+        <ul class="nav-links">
+            <div class="menu">
+                <li><a class="nav__link active" href="#Inicio">Home </a></li>
+                <li><a class="nav__link active" href="#About">About</a></li>
+                <li class="dropdown">
+                    <a href="#Materias " class="dropbtn">Subjects</a>
+                    <div class="dropdown-content">
+                        <a href="#Math">Matematicas</a>
+                        <a href="#Fisik">Fisica</a>
+                        <a href="#Quimica">Quimica</a>
+                        <a href="#Informatic">Informatica</a>
+                    </div>
+                </li>
+                <!-- <li><a class="nav__link active" href="#Materias">Subjects</a></li> -->
+                <!-- <li><a class="nav__link" href="#Comunidad">Community</a></li> -->
+                <li class="btn__login"><a class="nav__link" href="pages/signIn.html">SignIn</a></li>
+                <li class="btn__register"><a class="nav__link" id="open" href="#">SignUp</a></li>
+            </div>
+        </ul>
+    </nav>
 
+    <Section id="Inicio" class="Inicio">
+        <div class="container">
 
-<Section id="Inicio" class="Inicio">
-    <div class="container">
+            <div class="description">
+                <h1 class="title">Bienvenido a Schoo<span class="live">Live</span></h1>
+                <!--
+               
+               
+          -->
 
-        <div class="description">
-            <h1 class="title">Bienvenido a Schoo<span class="live">Live</span></h1>
-            <p class="text">
-                Una plataforma de estudio con el objetivo
-                de brindar apoyo estudiantil en diversas
-                materias.
-            </p>
-
-            <div class="btn">
-                <button class="btn__start" type="submit">
-                    <a href="pages/registroScreen.html">Empezar</a>
-                </button>
-                <!-- <button class="btn__leermas" type="submit">
+                <div class="btn">
+                    <!-- <button id="open" class="btn__start" type="submit">
+                    <a >Empezar</a>
+                </button> -->
+                    <!-- <button class="btn__leermas" type="submit">
                         <a href="pages/registroScreen.html">Leer mas</a>
                     </button> -->
+                </div>
+            </div>
+
+            <div class="imgs">
+                <img src="assets/imgp1.png" alt="">
+            </div>
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <div class="Planes__Screen">
+                        <div class="CardPlan">
+                            <div class="info__study">
+                                <div class="imagen">
+                                    <img src="../assets/study.png" alt="">
+                                </div>
+                                <h2>Estudiante</h2>
+
+                                <div class="plus">
+                                    <!-- <img src="../assets/Ok.png" alt=""> -->
+                                    <p>Acceso de por vida</p>
+                                </div>
+                                <div class="plus">
+                                    <p>Acceso Gratuito</p>
+
+                                </div>
+                                <div class="plus">
+                                    <p>Cursos, Libros, Videos</p>
+                                </div>
+
+                                <div class="btnStart">
+                                    <button class="btn-start"><a href="../pages/studyForm.html">
+                                            Empezar
+                                        </a></button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="CardPlan">
+                            <div class="info__study">
+                                <div class="imagen">
+                                    <img src="../assets/teacher.png" alt="">
+                                </div>
+                                <h2>Docente</h2>
+                                <div class="plus">
+                                    <!-- <img src="../assets/Ok.png" alt=""> -->
+                                    <p>Registrar Alumnos</p>
+                                </div>
+                                <div class="plus">
+                                    <p>Acceso de por vida</p>
+
+                                </div>
+                                <div class="plus">
+                                    <p>Acceso Gratuito</p>
+                                </div>
+                                <div class="btnStart">
+                                    <button class="btn-start"><a href="pages/docenteForm.html">
+                                            Empezar
+                                        </a></button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button id="close" class="close">Cerrar</button>
+                </div>
+
+
+
             </div>
         </div>
+    </Section>
 
-        <div class="imgs">
-            <img src="assets/imgp1.png" alt="">
-        </div>
-    </div>
-</Section>
+    <section id="About">
+        <div class="descriptionv2">
+            <div class="aboutUs">
+                <h1>¿Quienes Somos?</h1>
+                <!-- <h1>About Us</h1> -->
+                <p class="textv2">
+                    Una plataforma de estudio desarrollada con el objetivo
+                    de brindar apoyo estudiantil en diversas
+                    areas academicas
+                </p>
+                <!-- <p class="textv2">We are a study plataform develop with the object of supporting students in
+                academic areas <br> -Jared
+                
+            </p> -->
+            </div>
 
-    <!-- <section id="About">
-        <div class="about">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, commodi maiores velit voluptate quas
-                praesentium harum corrupti, neque tenetur quidem provident soluta voluptatum aliquam qui, a quam.
-                Aliquid, blanditiis voluptates!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, commodi maiores velit voluptate quas
-                praesentium harum corrupti, neque tenetur quidem provident soluta voluptatum aliquam qui, a quam.
-                Aliquid, blanditiis voluptates!</p>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa, commodi maiores velit voluptate quas
-                praesentium harum corrupti, neque tenetur quidem provident soluta voluptatum aliquam qui, a quam.
-                Aliquid, blanditiis voluptates!</p>
         </div>
-    </section> -->
+        </div>
+        <div class="cardss">
+            <div class="img-card">
+                <!-- <img src="assets/books.png" alt=""> -->
+                <!-- <img src="assets/pcbook.png" alt=""> -->
+
+            </div>
+            <!-- <div>
+               
+            </div> -->
+    </section>
 
     <section id="Materias" class="Materias">
         <div class="card__principal">
-            <h1>Populares</h1>
-
-            <div class="slides">
-                <div class="cards">
-                   <a href="">
-                    <img src="assets/math.png" alt="">
-                   </a>
-                   <h2>Matematicas</h2>
-                </div>
-                <div class="cards">
-                   <a href=""> <img src="assets/informatoc.png" alt=""></a>
-                    <h2>Informatica</h2>
-                </div>
-                <div class="cards">
-                    <a href=""><img src="assets/quimica.png" alt=""></a>
-                    <h2>Quimica</h2>
-                </div>
-                <div class="cards">
-
+            <div id="Math" class="math">
+                <div class="rows">
+                    <div class="col-1">
+                        <h1>Matematicas</h1>
+                        <!-- <p>Matematicas, Fisica, Quimica,Informatica</p> -->
+                        <p>Variedad de videos, ayuda visual, entre otros..</p>
+                        <a class="butonn" value="Comenzar" href="#Fisik" >Next</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="assets/img/math.png" alt="" srcset="">
+                    </div>
                 </div>
             </div>
+            <div id="Fisik" class="math">
+                <div class="rows">
+                    <div class="col-1-fisik">
+                        <div class="info">
+                            <h1>Fisica</h1>
+                        <!-- <p>Matematicas, Fisica, Quimica,Informatica</p> -->
+                        <p>Variedad de videos, ayuda visual, entre otros..</p>
+                        </div>
+                        <div class="img-fisik" >
+                            <img src="assets/img/physic1.png" width="150" alt="">
+                        </div>
+                        <!-- <button class="butonn" value="Comenzar" type="submit">Leer mas </button> -->
+                    </div>
+                    <div class="col-2-fisik">
+                        <img src="assets/img/physic.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div id="Quimica" class="quimk quimica">
+       
+              <div class="qmk">
+                <div class="quimicaInfo">
+                    <h1>Quimica</h1>
+                    <!-- <p>Matematicas, Fisica, Quimica,Informatica</p> -->
+                    <p>Variedad de videos, ayuda visual, entre otros..</p>
+                    <!-- <button class="butonn" value="Comenzar" type="submit">Leer mas </button> -->
+                </div>
+              </div>
+                 
+                        <!-- <img src="assets/img/math.png" alt="" srcset=""> -->
+               
+            </div>
+            <div id="Informatic" class="informatic">
+                <div class="rows">
+                    <div class="col-1">
+                        <h1>Informatica</h1>
+                        <!-- <p>Matematicas, Fisica, Quimica,Informatica</p> -->
+                        <p>Variedad de videos, ayuda visual, entre otros..</p>
+                        <a class="butonn" value="Comenzar" href="pages/signIn.html" >Empezar</a>
+                    </div>
+                    <div class="col-2">
+                        <img src="assets/img/informatic.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
+    <!-- <section id="Comunidad" class="Comunidad">
+        <h1>Comunidad</h1>
+        <div class="community">
+         
+      
+
+            <div class="posts">
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="posts">
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="assets/study.png" alt="">
+                    <div class="card-body">
+                        <h2>Jhon Doe</h2>
+                        <p>im very happy with the plataform</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <!-- Scripts -->
+    <script src="js-dom.js"></script>
     <script src="index.js"></script>
 </body>
 
